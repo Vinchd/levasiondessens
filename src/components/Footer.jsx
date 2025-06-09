@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer>
+		<footer className="pr-5 font-extralight text-[8px] text-right">
 			<div>&copy; 2025 L'Évasion des Sens</div>
 		</footer>
 	);
