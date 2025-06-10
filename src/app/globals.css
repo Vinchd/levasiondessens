@@ -29,12 +29,12 @@
 	z-index: 1;
 	transition: ease-in 0.2s;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 }
 .filter-switch .background {
 	position: absolute;
 	width: 49%;
-	height: 38px;
+	height: 28px;
 	background-color: var(--color-primary);
 	top: 4px;
 	left: 4px;
