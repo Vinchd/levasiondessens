@@ -5,7 +5,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 export default function Navbar() {
 	return (
-		<nav className="top-0 fixed bg-primary py-4 w-full h-32 max-md:h-[90px]">
+		<nav className="top-0 fixed bg-primary py-4 w-full h-28 max-md:h-[90px]">
 			<div className="flex items-center mx-auto px-12 max-md:px-5 h-full">
 				<Link href="/" className="flex items-center mr-auto h-full">
 					<Image
