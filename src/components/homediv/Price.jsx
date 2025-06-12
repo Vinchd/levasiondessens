@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import useIsMobile from "./useIsMobile";
 
 export default function Price() {
@@ -119,75 +118,63 @@ export default function Price() {
 		},
 	];
 
-	const columns = useMemo(() => {
-		const colCount = 3;
-		const cols = Array.from({ length: colCount }, () => []);
+	const columns = [
+		[services[0], services[6]],
+		[services[3], services[4], services[7]],
+		[services[1], services[2], services[5]],
+	];
 
-		cols[0].push(services[0], services[6]);
-		cols[1].push(services[3], services[4], services[7]);
-		cols[2].push(services[1], services[2], services[5]);
-		console.log(cols);
-		return cols;
-	}, [services]);
-
-	const columnsMobile = useMemo(() => {
-		const colCount = 2;
-		const cols = Array.from({ length: colCount }, () => []);
-		// services.forEach((item, index) => {
-		// 	cols[index % colCount].push(item);
-		// });
-		cols[0].push(services[0], services[3], services[6]);
-		cols[1].push(
-			services[1],
-			services[2],
-			services[4],
-			services[5],
-			services[7],
-		);
-		return cols;
-	}, [services]);
+	const columnsMobile = [
+		[services[0], services[3], services[6]],
+		[services[1], services[2], services[4], services[5], services[7]],
+	];
 
 	const currentColumns = isMobile ? columnsMobile : columns;
 
 	return (
 		<div className="flex flex-wrap -mx-4 max-md:-mx-8">
-			{currentColumns.map((column, colIndex) => (
-				<div key={colIndex} className="px-4 w-1/3 max-sm:w-1/2">
-					{column.map((category) => (
-						<div
-							key={category.subtitle}
-							className="mb-6 max-md:mb-2 text-[9px] max-md:text-[7.5px]"
-						>
-							<h2 className="mb-1 font-semibold text-[12px]">
-								{category.subtitle}
-							</h2>
-							<ul className="space-y-0">
-								{category.services.map((service, index) => (
-									<li key={index}>
-										{service.name && service.price !== undefined ? (
-											<div className="flex items-center">
-												<span>{service.name}</span>
-												<span className="flex-grow mx-2 border-gray-400 border-b border-dotted" />
-												<span>{service.price}€</span>
-											</div>
-										) : service.bold ? (
-											<div className="font-semibold">{service.bold}</div>
-										) : service.thin ? (
-											<div className="mb-0.5 text-gray-500 italic leading-none tracking-tighter">
-												{service.thin}
-											</div>
-										) : null}
-									</li>
-								))}
-							</ul>
-						</div>
-					))}
-				</div>
-			))}
+			{currentColumns.map((column) => {
+				const colKey = column.map((c) => c.subtitle).join("-");
+				return (
+					<div key={colKey} className="px-4 w-1/3 max-sm:w-1/2">
+						{column.map((category) => (
+							<div
+								key={category.subtitle}
+								className="mb-6 max-md:mb-1 text-[9px] max-md:text-[7.5px]"
+							>
+								<h2 className="mb-1 font-semibold text-[12px]">
+									{category.subtitle}
+								</h2>
+								<ul className="space-y-0">
+									{category.services.map((service, index) => (
+										<li
+											key={`${category.subtitle}-${service.name || service.bold || service.thin}-${index}`}
+										>
+											{service.name && service.price !== undefined ? (
+												<div className="flex items-center">
+													<span>{service.name}</span>
+													<span className="flex-grow mx-2 border-gray-400 border-b border-dotted" />
+													<span>{service.price}€</span>
+												</div>
+											) : service.bold ? (
+												<div className="font-semibold">{service.bold}</div>
+											) : service.thin ? (
+												<div className="mb-0.5 text-gray-500 italic leading-none tracking-tighter">
+													{service.thin}
+												</div>
+											) : null}
+										</li>
+									))}
+								</ul>
+							</div>
+						))}
+					</div>
+				);
+			})}
 		</div>
 	);
 }
-/* Mettre en grid a la main sans .map ????*/
-/* Mettre en grid a la main sans .map ????*/
-/* Mettre en grid a la main sans .map ????*/
-/* Mettre en grid a la main sans .map ????*/
+/* Animation au changement de sous page*/
+/* Animation au changement de sous page*/
+/* Animation au changement de sous page*/
+/* Animation au changement de sous page*/
