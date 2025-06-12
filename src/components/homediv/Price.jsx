@@ -1,4 +1,4 @@
-import useIsMobile from "./useIsMobile";
+import useIsMobile from "../../lib/useIsMobile";
 
 export default function Price() {
 	const isMobile = useIsMobile();
