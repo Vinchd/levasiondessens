@@ -34,8 +34,10 @@ export default function RadioButton() {
 				</label>
 				<span className="background" />
 			</div>
-			<div className="px-5 w-full h-full overflow-y-auto text-[14px] max-md:text-[12px]">
-				{selected === "option1" ? <Welcome /> : <Price />}
+			<div className="flex flex-grow justify-center items-center w-full overflow-hidden">
+				<div className="px-5 w-full max-h-full overflow-y-auto text-[14px] max-md:text-[12px]">
+					{selected === "option1" ? <Welcome /> : <Price />}
+				</div>
 			</div>
 		</div>
 	);
