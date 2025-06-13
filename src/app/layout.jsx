@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				<main className="flex justify-center bg-secondary pt-28 max-md:pt-[90px] h-[calc(100vh-8rem)] grow">
 					{children}
-					<Analytics />
 				</main>
+				<Analytics />
 				<Footer />
 			</body>
 		</html>
