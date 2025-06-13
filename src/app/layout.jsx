@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				<main className="flex justify-center bg-secondary pt-28 max-md:pt-[90px] h-[calc(100vh-8rem)] grow">
 					{children}
+					<Analytics />
 				</main>
 				<Footer />
 			</body>
