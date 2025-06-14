@@ -29,7 +29,7 @@ export default function Welcome() {
 				pour un moment de complicité et de relaxation.
 			</p>
 			<p className="mb-3">Au plaisir de vous accueillir prochainement.</p>
-			<BookButton />
+			<BookButton text="Réserver" />
 			<div className="flex justify-center">
 				<Image
 					src="/tables-massage.jpg"
