@@ -12,8 +12,10 @@
     "@vercel/analytics": "^1.5.0",
     "motion": "^12.17.3",
     "next": "15.3.3",
+    "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
