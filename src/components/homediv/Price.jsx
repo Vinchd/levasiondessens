@@ -132,17 +132,20 @@ export default function Price() {
 	const currentColumns = isMobile ? columnsMobile : columns;
 
 	return (
-		<div className="flex flex-wrap -mx-4 max-md:-mx-8">
+		<div className="flex flex-wrap justify-around">
 			{currentColumns.map((column) => {
 				const colKey = column.map((c) => c.subtitle).join("-");
 				return (
-					<div key={colKey} className="px-4 w-1/3 max-sm:w-1/2">
+					<div
+						key={colKey}
+						className="sm:px-5 w-1/3 max-sm:w-fit max-sm:max-w-[48%]"
+					>
 						{column.map((category) => (
 							<div
 								key={category.subtitle}
-								className="mb-6 max-md:mb-1 text-[9px] max-md:text-[7.5px]"
+								className="mb-6 max-md:mb-0.5 text-[9px] max-md:text-[7.5px]"
 							>
-								<h2 className="mb-1 font-semibold text-[12px]">
+								<h2 className="mb-0.5 font-semibold text-[12px]">
 									{category.subtitle}
 								</h2>
 								<ul className="space-y-0">
