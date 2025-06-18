@@ -40,7 +40,7 @@ export default function RadioButton() {
 	};
 
 	return (
-		<div className="flex flex-col items-center max-md:px-4 w-full max-w-[900px] h-full min-h-full">
+		<div className="flex flex-col items-center px-4 w-full max-w-[900px] h-full min-h-full">
 			<div
 				id="firstFilter"
 				className="filter-switch mb-6 w-[400px] max-md:w-[80vw] h-[40px] min-h-[40px]"
@@ -76,7 +76,7 @@ export default function RadioButton() {
 						initial="initial"
 						animate="animate"
 						exit="exit"
-						className="px-5 w-full max-h-full overflow-y-auto text-[14px] max-md:text-[12px]"
+						className="w-full max-h-full overflow-y-auto text-[14px] max-md:text-[12px]"
 					>
 						{selected === "option1" ? <Welcome /> : <Price />}
 					</motion.div>

@@ -49,15 +49,15 @@ export default function ContactForm() {
 
 			<form
 				onSubmit={handleSubmit}
-				className="space-y-4 max-md:space-y-2 bg-white shadow-md mx-auto p-6 border-2 border-primary rounded-4xl max-w-2xl"
+				className="space-y-2.5 max-md:space-y-2 bg-white shadow-md mx-auto p-6 sm:px-10 border-2 border-primary rounded-4xl max-w-2xl"
 			>
-				<h2 className="font-medium text-sm text-center tracking-wider">
+				<h2 className="font-medium text-center tracking-wider">
 					Formulaire de contact
 				</h2>
 				<div>
 					<label
 						htmlFor="name"
-						className="block ml-2 font-medium text-gray-700 text-sm"
+						className="block ml-2 font-medium text-gray-700"
 					>
 						Nom*
 					</label>
@@ -70,15 +70,15 @@ export default function ContactForm() {
 						placeholder="Votre nom"
 						title="Champ obligatoire"
 						required
-						className="mt-1 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full text-sm"
+						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
 					/>
 				</div>
 
-				<div className="gap-4 grid grid-cols-2 max-md:grid-cols-1">
+				<div className="gap-4 max-md:gap-2 grid grid-cols-2 max-md:grid-cols-1">
 					<div>
 						<label
 							htmlFor="email"
-							className="block ml-2 font-medium text-gray-700 text-sm"
+							className="block ml-2 font-medium text-gray-700"
 						>
 							Email*
 						</label>
@@ -91,14 +91,14 @@ export default function ContactForm() {
 							placeholder="exemple@gmail.com"
 							title="Champ obligatoire"
 							required
-							className="mt-1 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full text-sm"
+							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
 						/>
 					</div>
 
 					<div>
 						<label
 							htmlFor="phone"
-							className="block ml-2 font-medium text-gray-700 text-sm"
+							className="block ml-2 font-medium text-gray-700"
 						>
 							Téléphone
 						</label>
@@ -110,7 +110,7 @@ export default function ContactForm() {
 							onChange={handleChange}
 							placeholder="0x xx xx xx xx"
 							pattern="^/^(0|\+33)[1-9](?:[\s.-]?\d{2}){4}$/"
-							className="mt-1 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full text-sm"
+							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
 						/>
 					</div>
 				</div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
 				<div>
 					<label
 						htmlFor="message"
-						className="block ml-2 font-medium text-gray-700 text-sm"
+						className="block ml-2 font-medium text-gray-700"
 					>
 						Message*
 					</label>
@@ -130,10 +130,10 @@ export default function ContactForm() {
 						placeholder="Votre message"
 						title="Champ obligatoire"
 						required
-						rows={5}
-						className="mt-1 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full text-sm"
+						rows={4}
+						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
 					/>
-					<p className="mr-6 font-extralight text-xs text-right italic tracking-tighter">
+					<p className="mr-6 font-extralight max-md:text-[8px] text-xs text-right italic tracking-tighter">
 						* Champ obligatoire
 					</p>
 				</div>
