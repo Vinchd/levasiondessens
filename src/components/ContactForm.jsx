@@ -70,7 +70,7 @@ export default function ContactForm() {
 						placeholder="Votre nom"
 						title="Champ obligatoire"
 						required
-						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
+						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full transition duration-200"
 					/>
 				</div>
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
 							placeholder="exemple@gmail.com"
 							title="Champ obligatoire"
 							required
-							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
+							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full transition duration-200"
 						/>
 					</div>
 
@@ -110,7 +110,7 @@ export default function ContactForm() {
 							onChange={handleChange}
 							placeholder="0x xx xx xx xx"
 							pattern="^/^(0|\+33)[1-9](?:[\s.-]?\d{2}){4}$/"
-							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
+							className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full transition duration-200"
 						/>
 					</div>
 				</div>
@@ -131,7 +131,7 @@ export default function ContactForm() {
 						title="Champ obligatoire"
 						required
 						rows={4}
-						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full"
+						className="mt-0.5 px-4 py-2 border border-primary rounded-lg focus:outline-none focus:ring-[#bd9c83] focus:ring-2 w-full transition duration-200"
 					/>
 					<p className="mr-6 font-extralight max-md:text-[8px] text-xs text-right italic tracking-tighter">
 						* Champ obligatoire

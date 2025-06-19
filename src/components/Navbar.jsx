@@ -19,7 +19,7 @@ export default function Navbar() {
 				<div className="flex items-center gap-5 max-md:gap-2 md:mr-7 h-full">
 					<Link
 						href="/contact"
-						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary hover:underline underline-offset-3"
+						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary hover:underline underline-offset-3 transition duration-200"
 					>
 						Contact
 					</Link>
@@ -27,7 +27,7 @@ export default function Navbar() {
 						href="https://www.instagram.com/levasiondes.sens/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary"
+						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary transition duration-200"
 					>
 						<AiFillInstagram className="w-8 h-8" />
 					</a>
@@ -35,7 +35,7 @@ export default function Navbar() {
 						href="https://www.facebook.com/profile.php?id=100067921822699"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary"
+						className="flex items-center px-3 max-md:px-1 h-full hover:text-secondary transition duration-200"
 					>
 						<FaFacebookSquare className="w-7 h-7" />
 					</a>
