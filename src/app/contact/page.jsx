@@ -1,6 +1,11 @@
 import BookButton from "@/components/BookButton";
 import ContactForm from "@/components/ContactForm";
 
+export const metadata = {
+	title: "Contact | L'Évasion des Sens",
+	description: "Page de contact l'Évasion des sens",
+};
+
 export default function page() {
 	return (
 		<div className="flex justify-center mt-4 w-full max-md:text-[12px] text-sm">
