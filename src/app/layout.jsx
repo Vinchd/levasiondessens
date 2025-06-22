@@ -18,6 +18,7 @@ export const metadata = {
 		"institut de beauté",
 		"massage",
 		"soins esthétiques",
+		"estheticienne",
 		"bien-être",
 		"épilation",
 		"La Bernerie-en-Retz",
@@ -50,8 +51,8 @@ const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "BeautySalon",
 	name: "L'Évasion des Sens",
-	image: "https://levasiondessens.vercel.app/evasion-des-sens-logo.png",
-	url: "https://levasiondessens.vercel.app",
+	image: "https://www.levasiondessens44.fr/evasion-des-sens-logo.png",
+	url: "https://www.levasiondessens44.fr/",
 	telephone: "+33636180561",
 	address: {
 		"@type": "PostalAddress",
