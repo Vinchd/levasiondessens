@@ -5,10 +5,10 @@ export default function Welcome() {
 	return (
 		<>
 			<p className="mb-2">
-				Ouvert à tous, tout au long de l’année, l’institut L’Évasion des Sens
-				vous accueille au sein de l’hôtel Le Grand Large. Venez découvrir un
-				espace dédié à la détente et au bien-être, que vous soyez seul(e) ou
-				accompagné(e).
+				Ouvert à tous, tout au long de l’année, l’institut{" "}
+				<span className="font-bold">L’Évasion des Sens</span> vous accueille au
+				sein de l’hôtel Le Grand Large. Venez découvrir un espace dédié à la
+				détente et au bien-être, que vous soyez seul(e) ou accompagné(e).
 			</p>
 			<div className="mb-2">
 				Nos prestations :
