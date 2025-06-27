@@ -20,7 +20,7 @@ export async function POST(req) {
 	const mailOptions = {
 		from: process.env.EMAIL_FROM,
 		to: process.env.EMAIL_TO,
-		subject: "Nouveau message depuis votre site",
+		subject: "Nouveau message depuis https://www.levasiondessens44.fr/",
 		replyTo: email,
 		text: `Nom: ${name}
 Email: ${email}
